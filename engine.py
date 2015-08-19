@@ -14,7 +14,7 @@ def _source_url(repo_url, path):
                 gist_id, path)
     elif 'github.com' in repo_url:
         base_url = repo_url.replace('github.com', 'raw.github.com')
-        return "{0}/master/{1}".format(base_url, path)
+        return "{0}/master/{1}.lua".format(base_url, path)
 
 def _make_view(repo_url):
     def _view(path):
